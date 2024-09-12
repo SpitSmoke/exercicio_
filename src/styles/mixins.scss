@@ -1,0 +1,31 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $grid-gutter;
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-gap: $grid-gutter;
+}
+
+@mixin grid-item {
+    grid-column: span 4;
+}
+
+@mixin button-style {
+    padding: 16px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@mixin hover-effect {
+    &:hover {
+    background-color: darken($accent-color, 10%);
+    }
+}

@@ -1,0 +1,124 @@
+.header {
+    background-color: $primary-color;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: $secondary-color;
+    }
+
+    .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+        margin-right: 20px;
+    }
+
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+        color: $accent-color;
+        }
+    }
+    }
+}
+
+.hero {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    @include flex-center;
+
+    .headline {
+    font-size: 48px;
+    font-weight: bold;
+    color: $primary-color;
+    }
+
+    .tagline {
+    font-size: 24px;
+    color: $secondary-color;
+    }
+
+    .cta-button {
+    @include button-style;
+    background-color: $accent-color;
+    color: #fff;
+    @include hover-effect;
+    }
+}
+
+.features {
+    @include grid-container;
+
+    .feature {
+    @include grid-item;
+    margin-bottom: 20px;
+
+    .icon {
+        font-size: 48px;
+        color: $secondary-color;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    .description {
+        font-size: 16px;
+        color: $secondary-color;
+    }
+    }
+}
+
+.call-to-action {
+    background-color: $primary-color;
+    padding: 20px;
+    text-align: center;
+
+    .cta-button {
+    @include button-style;
+    background-color: $accent-color;
+    color: #fff;
+    @include hover-effect;
+    }
+}
+
+.footer {
+    background-color: $primary-color;
+    padding: 20px;
+    text-align: center;
+
+    .copyright {
+    font-size: 14px;
+    color: $secondary-color;
+    }
+
+    .social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        margin-right: 20px;
+        color: $secondary-color;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+        color: $accent-color;
+        }
+    }
+    }
+}

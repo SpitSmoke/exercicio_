@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "sass src/styles/styles.scss build/styles/styles.css",
+    "build": "sass src/styles/styles.scss build/styles/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
